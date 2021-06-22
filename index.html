@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="suradnicovaSiet.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <canvas id="siet" class="siet"></canvas>
+        <canvas id="paint" class="paint"></canvas>
+        <div id="settingsDiv" class="settingsDiv">
+            <link src="settingsBtn.png" type="png">
+            <button id="settingsBtn" class="settingsBtn"></button>
+            <div id="settingsSlider" class="settingsSlider">
+                <div>
+                    <button id="viewModeBtn" class="in-slider-Btn" >View Mode</button>
+                    <div id='square-moreViewOptions' class='square-moreViewOptions'></div>
+                    <div id='moreViewOptions' class="moreViewOptions">
+                        <div style="font-style: italic; margin-left: 10px;margin-top: 5px;"> Background Color
+                            <br>
+                            <form id="viewModeRadioBoxes">
+                                <input type="radio" name="background" value="dark" style="margin-top: 5px;" checked="checked" > Dark
+                                <input type="radio" name="background" value="white"> White
+                            </form>
+                        </div>
+                        <div style="font-style: italic; margin-left: 10px;margin-top: 5px;"> Drawness
+                            <br>
+                            <input type="checkbox" id="drawness">
+                        </div>
+                        <!-- <div style="margin-left:10px; font-style: italic;"> Circles don't draw
+                            <br>
+                            <input id="circlesToHide" min=0 type="number" style="font-style: italic; width: 30px" value='0'> 
+                        </div> -->
+                        <!-- <form id="viewModeRadioBoxes">
+                            <input class="viewModeSelectButtons" type="radio" name="viewModeSelectButtons" value="darkAlpha" checked="true"> Dark-mode: alpha
+                            <br>
+                            <input class="viewModeSelectButtons" type="radio" name="viewModeSelectButtons" value="whiteCircles"> White-mode: circles
+                            <br>
+                            <input class="viewModeSelectButtons" type="radio" name="viewModeSelectButtons" value="whiteCirclesDraw"> White-mode: circles, draw
+                            <br>
+                            <input type="number" class="viewModeCirclesHide" id="viewModeCirclesHide" min="0" max="4">
+                        </form>
+                        <button id="resetViewModeBtn" class="resetViewModeBtn"></button> Reset View-mode -->
+                    </div>
+                </div>
+                <div>
+                    <button id="circlesBtn" class="in-slider-Btn" >Circles</button>
+                    <div id='square-moreCircleOptions' class='square-moreCircleOptions'></div>
+                    <div id='moreCircleOptions' class="moreCircleOptions">
+                    <form id="circleForm">
+                        <button type="button" style="margin-left: 10px; margin-top: 10px; border-radius: 0.5rem; height: 20px; width: 75px; font-size: 12px;" id="addCircleBtn">Add Circle</button>
+                        <button type="button" style="margin-left: 10px; margin-top: 10px; border-radius: 0.5rem; height: 20px; width: 75px; font-size: 9px;" id="removeCircleBtn">Remove Circle</button>
+                        <div style="margin-left: 30px;">radius _ _ _ _ _ _ _  velocity</div>
+                    </form>
+                    </div>  
+                </div>
+                <div>
+                    <button id="pointsModeBtn" class="in-slider-Btn"> Draw Points</button> 
+                    <div id='square-morePointsOptions' class='square-morePointsOptions'></div>
+                    <div id='morePointsOptions' class="morePointsOptions">
+                        <form id="pointsForm">
+                            <button type="button" style="margin-left: 10px; margin-top: 10px; border-radius: 0.5rem; height: 20px; width: 75px; font-size: 12px;" id="addPointBtn">Add Point</button>
+                            <button type="button" style="margin-left: 10px; margin-top: 10px; border-radius: 0.5rem; height: 20px; width: 75px; font-size: 9px;" id="removePointBtn">Remove Point</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="suradnicovaSiet.js"></script>
+    </body>
+</html>
